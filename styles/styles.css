@@ -14,7 +14,7 @@
 
 }
 
-main > section{
+main>section {
     margin-top: 130px;
 }
 
@@ -23,7 +23,7 @@ main > section{
     color: #424242;
 }
 
-.text-primary{
+.text-primary {
     color: rgb(255, 144, 14);
 }
 
@@ -45,19 +45,19 @@ main > section{
     font-family: Work Sans;
     font-size: 1.5rem;
     font-weight: 600;
-   padding: 20px 25px;
+    padding: 20px 25px;
 
 
     text-align: center;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.section-title{
-    font-size:2.8rem ;
+.section-title {
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
@@ -106,38 +106,94 @@ main{
     font-size: 4rem;
 }
 
-.banner-image{
+.banner-image {
     width: 100%;
 }
 
 /* team and feature related styles */
-.teams{
+.teams {
     align-items: center;
 }
 
-.team-img-container{
+.team-img-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:24px
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px
 }
-.our-features{
+
+.our-features {
     margin-left: 130px;
     max-width: 530px;
 }
 
-#quick-list{
+#quick-list {
     font-weight: 500;
 }
+
+/* some facts  related styles */
+
+.fact-card {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 241.83px;
+    height: 241.83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.facts-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px 50px;
+    
+    
+}
+.fact-card{
+    padding: 45px 35px;
+}
+
+.fact-number {
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 53px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fact-name {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-top: 0px;
+
+   
+}
+
 /* responsive media query */
 
-@media screen and (max-width:576px){
-    .navbar, .nav-link,.teams{
-       flex-direction: column;
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-link,
+    .teams {
+        flex-direction: column;
     }
-    .team-img-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .our-features{
+
+    .our-features {
         margin: 0px 20px;
     }
 
@@ -145,10 +201,11 @@ main{
 
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
-    .our-features{
+
+    .our-features {
         margin: 0px 20px;
         max-width: 708px;
     }
